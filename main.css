@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(180, 52%, 96%);
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header-color {
+  background-color: hsl(180, 29%, 50%);
+  background-image: url(/images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: fill;
+  background-attachment: fixed;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.input-for-tags {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+.myTags {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.myTags li {
+  list-style-type: none;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: hsl(180, 8%, 51%);
+  cursor: pointer;
+}
+
+.myTags li span {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 5px;
+  transition: 0.25s ease-out;
+}
+
+.myTags li span:hover {
+  color: red;
+}
+
+#container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sections {
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px hsl(180, 8%, 52%);
+}
+
+.myTags li.active {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+
+.listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.job-listing:nth-of-type(1) {
+  border-left: 4px solid hsl(180, 29%, 50%);
+}
+
+.job-listing:nth-of-type(2) {
+  border-left: 4px solid hsl(180, 29%, 50%);
+}
+
+.logo {
+  width: 70px;
+  margin-right: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.header .company-name {
+  color: hsl(180, 29%, 50%);
+  font-weight: 800;
+}
+
+.header .new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding-inline: 5px;
+  margin-inline: 10px;
+  border-radius: 10px;
+  font-variant: small-caps;
+}
+
+.header .featured {
+  color: white;
+  background-color: black;
+  font-variant: small-caps;
+  border-radius: 10px;
+  padding-inline: 5px;
+}
+
+.listing .role {
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+
+.listing .role:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.footer {
+  color: hsl(180, 8%, 52%);
+  text-align: justify;
+}
+
+.footer sub {
+  padding-inline: 10px;
+  font-weight: 800;
+}
+
+.sections .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 10px;
+  padding: 5px;
+}
+
+.tags p {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 31%, 95%);
+  border-radius: 5px;
+  font-weight: 520;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.tags p:last-of-type {
+  margin-right: 0;
+}
+
+.tags p:hover {
+  color: hsl(180, 31%, 95%);
+  background-color: hsl(180, 29%, 50%);
+}
+
+hr {
+  display: none;
+}
+
+.job-listing {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+/* Responsive style */
+
+@media (min-width: 0px) and (max-width: 768px) {
+  #container {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .sections {
+    background-color: white;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px hsl(180, 8%, 52%);
+  }
+
+  .listing {
+    position: relative;
+    margin-top: 15px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    position: absolute;
+    top: -4rem;
+  }
+
+  .header {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .header p {
+    margin-bottom: 5px;
+  }
+
+  .listing .role {
+    margin-bottom: 20px;
+  }
+
+  hr {
+    display: block;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+  }
+
+  .sections .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .tags p {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .myTags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .myTags li {
+    margin-bottom: 10px;
+  }
+
+  .job-listing {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+}

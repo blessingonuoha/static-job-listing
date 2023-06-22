@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="script.js" defer></script>
+
+    <title>Job Listings</title>
+  </head>
+  <body>
+    <div class="header-color"></div>
+    <div class="input-for-tags">
+      <ul class="myTags">
+        <li class="list active" onclick="filterSelection('all')">All</li>
+        <li class="list" onclick="filterSelection('html')">HTML</li>
+        <li class="list" onclick="filterSelection('css')">CSS</li>
+        <li class="list" onclick="filterSelection('javascript')">JavaScript</li>
+        <li class="list" onclick="filterSelection('senior')">Senior</li>
+        <li class="list" onclick="filterSelection('junior')">Junior</li>
+        <li class="list" onclick="filterSelection('ruby')">Ruby</li>
+        <li class="list" onclick="filterSelection('ror')">RoR</li>
+        <li class="list" onclick="filterSelection('frontend')">Frontend</li>
+        <li class="list" onclick="filterSelection('backend')">Backend</li>
+        <li class="list" onclick="filterSelection('python')">Python</li>
+        <li class="list" onclick="filterSelection('fullstack')">Fullstack</li>
+        <li class="list" onclick="filterSelection('midweight')">Midweight</li>
+        <li class="list" onclick="filterSelection('react')">React</li>
+        <li class="list" onclick="filterSelection('sass')">Sass</li>
+        <li class="list" onclick="filterSelection('vue')">Vue</li>
+        <li class="list" onclick="filterSelection('django')">Django</li>
+      </ul>
+    </div>
+    <div id="container">
+      <div class="job-listing sections frontend senior html css javascript">
+        <div class="listing">
+          <img src="/images/photosnap.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Photosnap</p>
+              <p class="new">New!</p>
+              <p class="featured">Featured</p>
+            </div>
+            <p class="role">Senior Frontend Developer</p>
+            <p class="footer">
+              1d ago <sub> &dot;</sub> Full Time <sub>&dot;</sub> USA only
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Senior</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="job-listing sections manage fullstack midweight python react">
+        <div class="listing">
+          <img src="/images/manage.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Manage</p>
+              <p class="new">New!</p>
+              <p class="featured">Featured</p>
+            </div>
+
+            <p class="role">Fullstack Developer</p>
+            <p class="footer">
+              1d ago <sub> &dot;</sub> Part Time <sub> &dot;</sub> USA only
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Fullstack</p>
+          <p>Midweight</p>
+          <p>Python</p>
+          <p>React</p>
+        </div>
+      </div>
+
+      <div
+        class="job-listing sections account frontend junior react sass javascript"
+      >
+        <div class="listing">
+          <img src="/images/account.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Account</p>
+              <p class="new">New!</p>
+            </div>
+
+            <p class="role">Junior Frontend developer</p>
+            <p class="footer">
+              2d ago <sub> &dot;</sub> Part Time <sub> &dot;</sub> USA only
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>React</p>
+          <p>Sass</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="job-listing sections myhome frontend junior css javascript">
+        <div class="listing">
+          <img src="/images/myhome.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">MyHome</p>
+            </div>
+            <p class="role">Junior Frontend Developer</p>
+            <p class="footer">
+              5d ago <sub> &dot;</sub> Contract <sub> &dot;</sub> USA only
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div
+        class="job-listing sections loop-studios fullstack midweight javascript sass ruby"
+      >
+        <div class="listing">
+          <img src="/images/loop-studios.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Loop Studios</p>
+            </div>
+
+            <p class="role">Software Engineer</p>
+            <p class="footer">
+              1w ago <sub> &dot;</sub> Full Time <sub> &dot;</sub> Worldwide
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Fullstack</p>
+          <p>Midweight</p>
+          <p>JavaScript</p>
+          <p>Sass</p>
+          <p>Ruby</p>
+        </div>
+      </div>
+
+      <div class="job-listing sections faceit backend junior ruby ror">
+        <div class="listing">
+          <img src="/images/faceit.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">FaceIt</p>
+            </div>
+
+            <p class="role">Junior Backend Developer</p>
+            <p class="footer">
+              2w ago <sub> &dot;</sub> Full Time <sub> &dot;</sub> UK only
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Backend</p>
+          <p>Junior</p>
+          <p>Ruby</p>
+          <p>RoR</p>
+        </div>
+      </div>
+
+      <div
+        class="job-listing sections shortly frontend junior html sass javascript"
+      >
+        <div class="listing">
+          <img src="/images/shortly.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Shortly</p>
+            </div>
+
+            <p class="role">Junior Developer</p>
+            <p class="footer">
+              2w ago <sub> &dot;</sub> Full Time <sub> &dot;</sub> Worldwide
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>HTML</p>
+          <p>Sass</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div
+        class="job-listing sections insure frontend junior vue javascript sass"
+      >
+        <div class="listing">
+          <img src="/images/insure.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Insure</p>
+            </div>
+
+            <p class="role">Junior Frontend Developer</p>
+            <p class="footer">
+              2w ago <sub> &dot;</sub> Full Time <sub> &dot;</sub> USA only
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>Vue</p>
+          <p>JavaScript</p>
+          <p>Sass</p>
+        </div>
+      </div>
+
+      <div
+        class="job-listing sections eyecam fullstack midweight javascript django python"
+      >
+        <div class="listing">
+          <img src="/images/eyecam-co.svg" alt="company-logo" class="logo" />
+          <div>
+            <div class="header">
+              <p class="company-name">Eyecam Co.</p>
+            </div>
+
+            <p class="role">Full Stack Engineer</p>
+            <p class="footer">
+              3w ago <sub> &dot;</sub> Full Time <sub> &dot;</sub> Worldwide
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Fullstack</p>
+          <p>Midweight</p>
+          <p>JavaScript</p>
+          <p>Django</p>
+          <p>Python</p>
+        </div>
+      </div>
+
+      <div
+        class="job-listing sections the-air-filter-company frontend junior react sass javascript"
+      >
+        <div class="listing">
+          <img
+            src="/images/the-air-filter-company.svg"
+            alt="company-logo"
+            class="logo"
+          />
+          <div>
+            <div class="header">
+              <p class="company-name">The Air Filter Company</p>
+            </div>
+
+            <p class="role">Frontend Developer</p>
+            <p class="footer">
+              1mon ago <sub> &dot;</sub> Part Time <sub> &dot;</sub> Worldwide
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>React</p>
+          <p>Sass</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
